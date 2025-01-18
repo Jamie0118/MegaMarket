@@ -1,0 +1,53 @@
+body {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #1e90ff;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dcdcdc;
+}
+
+.hero {
+    background: url('../img/Banner.png') no-repeat center center / cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.footer {
+    background-color: #1e90ff;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #bdbbbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
