@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaMarket - Block Shop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #1e90ff;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #dcdcdc;
+        }
+
+        .search-bar {
+            margin: 20px 0;
+        }
+
+        .block-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .block-item {
+            background-color: #2b2b2b;
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .block-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #1e90ff;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #bdbbbb;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="Main.html">MegaMarket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./Spleef.html">Spleef</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./TKR.html">TKR</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-light" href="./events.html">Events</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./shop.html">Shops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for blocks...">
+        </div>
+
+        <!-- Block List -->
+        <div id="blockList" class="block-list">
+            <!-- Glas -->
+            <div class="block-item" data-name="white glass">
+                <img src="/img/blocks/white_glass.png" alt="White Glass">
+                <h5>White Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="light gray glass">
+                <img src="/img/blocks/light_gray_glass.png" alt="Light Gray Glass">
+                <h5>Light Gray Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="gray glass">
+                <img src="/img/blocks/gray_glass.png" alt="Gray Glass">
+                <h5>Gray Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="black glass">
+                <img src="img/blocks/black_glass.png" alt="Black Glass">
+                <h5>Black Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="brown glass">
+                <img src="img/blocks/brown_glass.png" alt="Brown Glass">
+                <h5>Brown Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="red glass">
+                <img src="img/blocks/red_glass.png" alt="Red Glass">
+                <h5>Red Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="orange glass">
+                <img src="img/blocks/orange_glass.png" alt="Orange Glass">
+                <h5>Orange Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="yellow glass">
+                <img src="img/blocks/yellow_glass.png" alt="Yellow Glass">
+                <h5>Yellow Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="lime glass">
+                <img src="img/blocks/lime_glass.png" alt="Lime Glass">
+                <h5>Lime Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="green glass">
+                <img src="img/blocks/green_glass.png" alt="Green Glass">
+                <h5>Green Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="cyan glass">
+                <img src="img/blocks/cyan_glass.png" alt="Cyan Glass">
+                <h5>Cyan Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="light blue glass">
+                <img src="img/blocks/light_blue_glass.png" alt="Light Blue Glass">
+                <h5>Light Blue Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="blue glass">
+                <img src="img/blocks/blue_glass.png" alt="Blue Glass">
+                <h5>Blue Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="purple glass">
+                <img src="img/blocks/purple_glass.png" alt="Purple Glass">
+                <h5>Purple Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="magenta glass">
+                <img src="img/blocks/magenta_glass.png" alt="Magenta Glass">
+                <h5>Magenta Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="pink glass">
+                <img src="img/blocks/pink_glass.png" alt="Pink Glass">
+                <h5>Pink Glass</h5>
+                <p>128 per diamond</p>
+            </div>
+
+            <!-- Wood -->
+            <div class="block-item" data-name="oak log">
+                <img src="img/blocks/oak_log.png" alt="Oak Log">
+                <h5>Oak Log</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="birch log">
+                <img src="img/blocks/birch_log.png" alt="Birch Log">
+                <h5>Birch Log</h5>
+                <p>144 per diamond</p>
+            </div>
+            <div class="block-item" data-name="spruce log">
+                <img src="img/blocks/spruce_log.png" alt="Spruce Log">
+                <h5>Spruce Log</h5>
+                <p>144 per diamond</p>
+            </div>
+            <div class="block-item" data-name="mangrove log">
+                <img src="img/blocks/mangrove_log.png" alt="Mangrove Log">
+                <h5>Mangrove Log</h5>
+                <p>144 per diamond</p>
+            </div>
+            <div class="block-item" data-name="dark oak log">
+                <img src="img/blocks/dark_oak_log.png" alt="Dark Oak Log">
+                <h5>Dark Oak Log</h5>
+                <p>144 per diamond</p>
+            </div>
+            <div class="block-item" data-name="jungle log">
+                <img src="img/blocks/jungle_log.png" alt="Jungle Log">
+                <h5>Jungle Log</h5>
+                <p>144 per diamond</p>
+            </div>
+            <div class="block-item" data-name="acacia log">
+                <img src="img/blocks/acacia_log.png" alt="Acacia Log">
+                <h5>Acacia Log</h5>
+                <p>128 per diamond</p>
+            </div>
+            <div class="block-item" data-name="cherry log">
+                <img src="img/blocks/cherry_log.png" alt="Cherry Log">
+                <h5>Cherry Log</h5>
+                <p>144 per diamond</p>
+            </div>
+            <div class="block-item" data-name="crimson stem">
+                <img src="img/blocks/crimson_stem.png" alt="Crimson Stem">
+                <h5>Crimson Stem</h5>
+                <p>64 per diamond</p>
+            </div>
+            <div class="block-item" data-name="warped stem">
+                <img src="img/blocks/warped_stem.png" alt="Warped Stem">
+                <h5>Warped Stem</h5>
+                <p>144 per diamond</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <ul class="list-unstyled">
+                            <li><a href="./Spleef.html">Spleef</a></li>
+                            <li><a href="./TKR.html">TKR</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./events.html">Other events</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>IGN: J_0118 & OC08</p>
+                    <p>Discord J_0118: J.0118</p>
+                    <P>Discord OC08: dunneappel</P>
+                </div>
+                <div class="col-md-4">
+                    <h5>About MegaMarket</h5>
+                    <p>Your go-to destination for the best Minecraft events and shops!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FGW13DMMHN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FGW13DMMHN');
+    </script>
+    <!-- Search Functionality -->
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function () {
+            const query = this.value.toLowerCase();
+            const blocks = document.querySelectorAll('.block-item');
+
+            blocks.forEach(block => {
+                const name = block.getAttribute('data-name').toLowerCase();
+                if (name.includes(query)) {
+                    block.style.display = 'block';
+                } else {
+                    block.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
